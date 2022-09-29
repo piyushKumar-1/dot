@@ -1,0 +1,14 @@
+#format = "$directory\n$all"
+
+[character]
+success_symbol = "[>>>](bold green)"
+error_symbol = "[>>>](bold red)"
+
+# Disable the package module, hiding it from the prompt completely
+
+#[username]
+#disabled = false
+#show_always = true
+#
+#[hostname]
+#ssh_only = false
