@@ -101,4 +101,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gs="git status"
 alias nvig="nvim .gitignore"
+alias gpd="chmod +x ~/ubin/pushdot && sh ~/ubin/pushdot"
 [ -f "/Users/piyushkumar/.ghcup/env" ] && source "/Users/piyushkumar/.ghcup/env" # ghcup-env
