@@ -102,4 +102,12 @@ source $ZSH/oh-my-zsh.sh
 alias gs="git status"
 alias nvig="nvim .gitignore"
 alias gpd="sh ~/ubin/pushdot"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/usr/local/sbin:/Users/piyushkumar/.cargo/bin:/Applications/kitty.app/Contents/MacOS:/Users/piyushkumar/.cabal/bin:/Users/piyushkumar/.ghcup/bin:/Users/piyushkumar/.local/bin"
+export PATH="/Users/piyushkumar/.local/bin:/Users/piyushkumar/Projects/euler/euler-tools/euler-bin:$PATH"
+export PATH="/nix/var/nix/profiles/default/bin:$PATH"
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
 [ -f "/Users/piyushkumar/.ghcup/env" ] && source "/Users/piyushkumar/.ghcup/env" # ghcup-env
