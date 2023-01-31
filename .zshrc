@@ -104,6 +104,7 @@ alias gsw="git switch -"
 alias nvig="nvim .gitignore"
 alias gpd="sh ~/ubin/pushdot"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/usr/local/sbin:/Users/piyushkumar/.cargo/bin:/Applications/kitty.app/Contents/MacOS:/Users/piyushkumar/.cabal/bin:/Users/piyushkumar/.ghcup/bin:/Users/piyushkumar/.local/bin"
+# export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/Users/piyushkumar/.local/bin:/Users/piyushkumar/Projects/euler/euler-tools/euler-bin:$PATH"
 export PATH="/nix/var/nix/profiles/default/bin:$PATH"
 export PATH="/usr/local/Cellar/haskell-language-server/1.9.0.0_1/bin:/usr/local/Cellar/haskell-language-server/1.6.1.0/bin:$PATH"
@@ -113,10 +114,4 @@ if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
 fi
 # End Nix
 [ -f "/Users/piyushkumar/.ghcup/env" ] && source "/Users/piyushkumar/.ghcup/env" # ghcup-env
-export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/llvm/lib"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-
+export PATH="/usr/local/opt/llvm@12/bin:$PATH"

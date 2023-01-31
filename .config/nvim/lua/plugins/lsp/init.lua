@@ -108,6 +108,19 @@ lsp_config.hls.setup {
   },
 }
 
+lsp_config.purescriptls.setup {
+  cmd = {"npx", "purescript-language-server", "--stdio"},
+  on_attach = on_attach,
+  settings = {
+    purescript = {
+      addSpagoSources = true -- e.g. any purescript language-server config here
+    }
+  },
+  flags = {
+    debounce_text_changes = 150,
+  }
+}
+
 local function lspSymbol(name, icon)
 vim.fn.sign_define(
 	'DiagnosticSign' .. name,
