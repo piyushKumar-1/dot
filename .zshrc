@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="bira"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -107,6 +107,9 @@ alias ukh="sh ~/ubin/update-shared-kernel-hash.sh"
 alias clc="git log | head -n 1 | awk '{ print \$2 }' | pbcopy"
 alias ff="fd --type f --hidden --exclude .git | fzf-tmux -p | xargs nvim"
 alias sbf="stack build --fast"
+alias tmux="tmux -u"
+alias pbcopy="xclip -sel clip"
+alias pbpaste='xclip -selection clipboard -o'
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/usr/local/sbin:/Users/piyushkumar/.cargo/bin:/Applications/kitty.app/Contents/MacOS:/Users/piyushkumar/.cabal/bin:/Users/piyushkumar/.ghcup/bin:/Users/piyushkumar/.local/bin"
 # export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/Users/piyushkumar/.local/bin:/Users/piyushkumar/Projects/euler/euler-tools/euler-bin:$PATH"

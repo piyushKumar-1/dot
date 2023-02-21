@@ -240,7 +240,7 @@ bindsym $sup+Print       exec flameshot full
 
 #startup applications:
 exec_always --no-startup-id "nitrogen --restore && $HOME/.config/polybar/./launch.sh && picom"
-exec --no-startup-id i3-msg 'workspace 2; exec firefox -P ShreyBana; workspace 1'
+exec --no-startup-id i3-msg 'workspace 2; exec firefox -P piyush; workspace 1'
 exec --no-startup-id i3-msg 'workspace 1; exec firefox -P Section; workspace 3'
 exec --no-startup-id i3-msg 'workspace 3; exec alacritty'
 # vim:set ft=bash:

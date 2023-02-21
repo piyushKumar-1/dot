@@ -4,5 +4,5 @@ git add .config
 git add .gitignore 
 TIME=`date "+%Y-%m-%d %H:%M:%S"`
 git commit -m "[${TIME}]: dot configs"
-git pull origin main --rebase
-git push origin main
+git pull origin ubuntu --rebase
+git push origin ubuntu
