@@ -1,7 +1,0 @@
-cradle:
-  direct:
-    arguments:
-      - "Completion"
-      - "Context"
-      - "DupRecFields"
-      - "FieldsSharingSignature"
