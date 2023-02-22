@@ -1,4 +1,4 @@
-cd ~
+cd ~/dot
 git add .zshrc
 git add .config 
 git add .gitignore 
