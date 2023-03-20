@@ -102,12 +102,11 @@ source $ZSH/oh-my-zsh.sh
 alias gs="git status"
 alias gsw="git switch -"
 alias nvig="nvim .gitignore"
-alias gpd="sh ~/ubin/pushdot"
-alias ukh="sh ~/ubin/update-shared-kernel-hash.sh"
+alias gpd="sh ~/ubin/pushdot" alias ukh="sh ~/ubin/update-shared-kernel-hash.sh"
 alias clc="git log | head -n 1 | awk '{ print \$2 }' | pbcopy"
 alias ff="fd --type f --hidden --exclude .git | fzf-tmux -p | xargs nvim"
 alias sbf="stack build --fast"
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/usr/local/sbin:/Users/piyushkumar/.cargo/bin:/Applications/kitty.app/Contents/MacOS:/Users/piyushkumar/.cabal/bin:/Users/piyushkumar/.ghcup/bin:/Users/piyushkumar/.local/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/usr/local/sbin:/Users/piyushkumar/.cargo/bin:/Applications/kitty.app/Contents/MacOS:/Users/piyushkumar/.cabal/bin:/Users/piyushkumar/.ghcup/bin:/Users/piyushkumar/.local/bin"
 # export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/Users/piyushkumar/.local/bin:/Users/piyushkumar/Projects/euler/euler-tools/euler-bin:$PATH"
 export PATH="/nix/var/nix/profiles/default/bin:$PATH"
@@ -119,3 +118,4 @@ fi
 # End Nix
 [ -f "/Users/piyushkumar/.ghcup/env" ] && source "/Users/piyushkumar/.ghcup/env" # ghcup-env
 export PATH="/usr/local/opt/llvm@12/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"

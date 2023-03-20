@@ -1,6 +1,8 @@
 return require("packer").startup(function(use)
   use "wbthomason/packer.nvim"
   use "gruvbox-community/gruvbox"
+  use "nvim-lua/plenary.nvim"
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
   use {
     "nvim-lualine/lualine.nvim",
     requires = { "kyazdani42/nvim-web-devicons" }
