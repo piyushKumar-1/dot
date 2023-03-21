@@ -1,11 +1,11 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,37 +85,35 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+alias pdb="ssh piyush@13.126.59.53 -p 37689"
+alias hashit="python3 /Users/piyush/ubin/hashmul"
+alias k="kubectl"
 alias gs="git status"
-alias gsw="git switch -"
-alias nvig="nvim .gitignore"
-alias gpd="sh ~/ubin/pushdot" alias ukh="sh ~/ubin/update-shared-kernel-hash.sh"
-alias clc="git log | head -n 1 | awk '{ print \$2 }' | pbcopy"
-alias ff="fd --type f --hidden --exclude .git | fzf-tmux -p | xargs nvim"
-alias sbf="stack build --fast"
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/usr/local/sbin:/Users/piyushkumar/.cargo/bin:/Applications/kitty.app/Contents/MacOS:/Users/piyushkumar/.cabal/bin:/Users/piyushkumar/.ghcup/bin:/Users/piyushkumar/.local/bin"
-# export PATH="/usr/local/opt/llvm/bin:$PATH"
-export PATH="/Users/piyushkumar/.local/bin:/Users/piyushkumar/Projects/euler/euler-tools/euler-bin:$PATH"
-export PATH="/nix/var/nix/profiles/default/bin:$PATH"
-export PATH="/usr/local/Cellar/haskell-language-server/1.9.0.0_1/bin:/usr/local/Cellar/haskell-language-server/1.6.1.0/bin:$PATH"
-# Nix
-if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
-  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
-fi
-# End Nix
-[ -f "/Users/piyushkumar/.ghcup/env" ] && source "/Users/piyushkumar/.ghcup/env" # ghcup-env
-export PATH="/usr/local/opt/llvm@12/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
+alias gsw="git switch"
+alias clc="git log | head -1 | awk '{ print $2 }' | tr -d '\n' | pbcopy"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools

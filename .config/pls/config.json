@@ -1,0 +1,36 @@
+{
+  "user_name": "Prabhu",
+  "initial_setup_done": true,
+  "show_task_progress": true,
+  "show_quotes": true,
+  "tasks": [
+    {
+      "name": "update fleet device mapping",
+      "done": true
+    },
+    {
+      "name": "deploy eta-compute",
+      "done": true
+    },
+    {
+      "name": "debug stops ahead still coming",
+      "done": true
+    },
+    {
+      "name": "help scheduler scale up",
+      "done": false
+    },
+    {
+      "name": "make multimodal search fast",
+      "done": false
+    },
+    {
+      "name": "review PRs",
+      "done": false
+    },
+    {
+      "name": "get tower locations",
+      "done": false
+    }
+  ]
+}

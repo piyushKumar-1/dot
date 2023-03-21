@@ -20,7 +20,7 @@ set.relativenumber = true
 set.swapfile = false
 set.backup = false
 set.compatible = false
-set.undodir = '/Users/piyushkumar/.vim/undodir/'
+set.undodir = '/Users/piyush/.vim/undodir/'
 set.undofile = true
 set.incsearch = true
 set.rnu = true
@@ -48,9 +48,9 @@ vim.cmd("nnoremap <leader>bf :BufferLineMovePrev<CR>")
 
 -- PLUGINS
 require('plugins.init')
-require('plugins.lsp.null-ls')
-require('plugins.lsp.cmp')
-require('plugins.lsp.init')
+-- require('plugins.lsp.null-ls')
+-- require('plugins.lsp.cmp')
+-- require('plugins.lsp.init')
 
 -- COLORS
 set.termguicolors = true

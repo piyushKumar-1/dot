@@ -57,7 +57,7 @@ for _, server in pairs(servers) do
 end
 
 lsp_config.groovyls.setup {
-  cmd = { "java", "-jar", "/Users/piyushkumar/.lsp/groovy-language-server/build/libs/groovy-language-server-all.jar" },
+  cmd = { "java", "-jar", "/Users/piyush/.lsp/groovy-language-server/build/libs/groovy-language-server-all.jar" },
   capabilities = capabilties,
   on_attach = on_attach,
    handlers = {
