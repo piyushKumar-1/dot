@@ -32,6 +32,8 @@ vim.cmd("au BufNewFile,BufRead *.sh let b:is_bash=1")
 -- KEY-MAPPINGS
 vim.g.mapleader = ';' 
 local opts = { noremap = true, silent = true }
+vim.api.nvim_set_keymap('n', '<leader>fj' ,'<cmd>DiffviewOpen<cr>', opts)
+vim.api.nvim_set_keymap('n', '<leader>jf' ,'<cmd>DiffviewClose<cr>', opts)
 vim.api.nvim_set_keymap('n', '<leader>ff' ,'<cmd>Telescope find_files<cr>', opts)
 vim.api.nvim_set_keymap('n', '<leader>fg' ,'<cmd>Telescope live_grep<cr>', opts)
 vim.api.nvim_set_keymap('n', '<leader>fb' ,'<cmd>Telescope buffers<cr>', opts)
