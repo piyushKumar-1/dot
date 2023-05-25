@@ -1,0 +1,19 @@
+# set -g default-terminal "tmux-256color"
+set -s escape-time 0
+unbind C-b
+set-option -g prefix M-a
+bind-key M-a send-prefix
+bind-key c command-prompt -p "window name:" "new-window; rename-window '%%'"
+source-file ~/tmuxline
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+# Toggle mouse on
+bind-key M \
+    set-option -g mouse on \;\
+    display-message 'Mouse: ON'
+# Toggle mouse off
+bind-key m \
+    set-option -g mouse off \;\
+    display-message 'Mouse: OFF'
